@@ -1,6 +1,43 @@
 *{
     padding: 0;
+    margin: 0;
+    font-family: 'Roboto', 'sans-serif';
 }
-h2{
+body{
+    background: #263138;
+}
+header{
+    background-color: blueviolet;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 10% 24px 10%;
+}
+header a{
+    color: white;
+    text-decoration: none;
+    font-weight: 900;
+    font-size: large;
+}
+
+.products{
+    justify-content: space-between;
+    display: flex;
+}
+
+.products p{
     text-align: center;
+    font-weight: 700;
+}
+
+.product-price{
+    justify-content: space-between;
+    display: flex;
+    padding: 0% 10%;
+}
+.box{
+    background-color: white;
+    padding: 80px 60px;
+    border-radius: 10px;
+    box-shadow: 0 15px 30px black;
 }
