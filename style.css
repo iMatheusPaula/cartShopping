@@ -20,24 +20,39 @@ header a{
     font-size: large;
 }
 
-.products{
-    justify-content: space-between;
+.list-products{
+    /*justify-content: space-between;
     display: flex;
+    flex-direction: row;
+    position: relative;*/
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+    gap:2%;
+    margin: 2% 2%;
+    /* padding: 2%; */
 }
 
-.products p{
+.box{
+    background-color: white;
+    padding: 30px 40px;
+    border-radius: 10px;
+    box-shadow: 0 15px 30px black;
+}
+
+.box p{
     text-align: center;
+    /* text-size-adjust: 100%; */
     font-weight: 700;
+    max-width: 50%;
+}
+
+.box img{
+    width: 100%;
+    height: auto;
 }
 
 .product-price{
     justify-content: space-between;
     display: flex;
     padding: 0% 10%;
-}
-.box{
-    background-color: white;
-    padding: 80px 60px;
-    border-radius: 10px;
-    box-shadow: 0 15px 30px black;
 }
