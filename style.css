@@ -56,3 +56,39 @@ header a{
     display: flex;
     padding: 0% 10%;
 }
+
+.cart-container table {
+    width: 100%;
+    padding: 0.5em;
+    padding-bottom: 2em;
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin-bottom: 2.5em; 
+}
+  
+.cart-container table thead th {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ea332a; 
+}
+  
+.cart-container table tbody {
+    padding-bottom: 4em; 
+}
+  
+.cart-container table tbody td {
+    padding: 0.5em; 
+}
+  
+.cart-image {
+    max-width: 120px;
+}
+  
+.remove {
+    text-align: center;
+    width: 120px;
+    height: 120px;
+    padding: 5px 10px;
+    border-radius: 50%;
+    background-color: #ea332a;
+    color: #daed0e;
+}

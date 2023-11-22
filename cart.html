@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Loja de Brindes</title>
+    <title>Loja de Brindes - Carrinho</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
@@ -11,32 +11,36 @@
 </head>
 <body>
     <header>
-        <a href="#">Loja de Brindes</a>
-        <a href="#" class="">Carrinho(x)</a>
+        <a href="/">Loja de Brindes</a>
+        <a href="/cart.html" class="">Carrinho(x)</a>
     </header>
     <main>
         <div class="list-products">
             <div class="box">
-                <img src="img/cordao-para-cracha-45-x-2cm-acetinado-colorido-1629133025348484726611a98e1db69b.jpg" alt="Cordao" srcset="">
-                <p>cordão personalizado</p>
-                <div class="product-price">
-                     
-                    <button class="buy">Comprar</button>
-                </div>
-            </div>
-            <div class="box">
-                <img src="img/cracha-pvc-9x6cm-pvc-canto-arredondado-colorido-159847663918612950285f46d15f480d3.jpg" alt="Cordao" srcset="">
-                <p>crachá personalizado</p>
-                <div class="product-price">
-                    <p>R$ 20,00</p>
-                    <button class="buy">Comprar</button>
-                </div>
-            </div>
-            
+                <table id="cart-content">
+                    <thead>
+                    <tr>
+                        <th>Image</th>
+                        <th>Name</th>
+                        <th>Price</th>
+                        <th></th>
+                    </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+                <p id="total-price"></p>
+                <a href="" id="checkout-btn">Comprar</a>
+                <a href="" id="clear-cart">Limpar Carrinho</a>
+            </div>            
         </div>
+
+        <div id="qr-code"></div>
+        
+          
     </main>
     <footeer>
     </footeer>
-    <script src="index.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <script src="cart.js"></script>
 </body>
 </html>
